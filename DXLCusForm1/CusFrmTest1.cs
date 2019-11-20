@@ -55,27 +55,14 @@ namespace DXLog.net
                 mainForm = (FrmMain)(ParentForm == null ? Owner : ParentForm);
                 if (mainForm != null)
                 {
-                    //_cdata.ScenarioDefinitionChanged += new ContestData.ScenarioDefinitionChange(update_display_c);
                     _cdata.ScenarioSelectionChanged += new ContestData.ScenarioSelectionChange(update_display);
                     update_display(mainForm.activeSO2RScenario + 1);
                 }
             }
         }
 
-        //private void update_display_c()
-        //{
-        //    update_display(mainForm.activeSO2RScenario);
-        //}
-
         private void update_display(int scenario)
         {
-            //    if (InvokeRequired)
-            //    {
-            //        newQsoSaved d = new newQsoSaved(mainForm_NewQSOSaved);
-            //        Invoke(d, new object[] { newQso });
-            //        return;
-            //    }
-
             if (InvokeRequired)
             {
                 ContestData.ScenarioSelectionChange d = new ContestData.ScenarioSelectionChange(update_display);
@@ -109,6 +96,15 @@ namespace DXLog.net
             label6.ForeColor = Color.Black;
             label7.ForeColor = Color.Black;
             label8.ForeColor = Color.Black;
+
+            label1.Font = _windowFont;
+            label2.Font = _windowFont;
+            label3.Font = _windowFont;
+            label4.Font = _windowFont;
+            label5.Font = _windowFont;
+            label6.Font = _windowFont;
+            label7.Font = _windowFont;
+            label8.Font = _windowFont;
 
             if (_cdata.OPTechnique == ContestData.Technique.SO2R_ADV)
             {
@@ -151,25 +147,6 @@ namespace DXLog.net
             }
 
         }
-
-
-        //private void mainForm_NewQSOSaved(DXQSO newQso)
-        //{
-        //    if (InvokeRequired)
-        //    {
-        //        newQsoSaved d = new newQsoSaved(mainForm_NewQSOSaved);
-        //        Invoke(d, new object[] { newQso });
-        //        return;
-        //    }
-
-        //    StringBuilder sb = new StringBuilder();
-        //    sb.AppendLine("New QSO is saved."); 
-        //    sb.AppendLine(string.Format("QSO time: {0}", newQso.QSOTime.ToString("dd.MM.yyyy HH:mm:ss")));
-        //    sb.AppendLine(string.Format("Call worked: {0}", newQso.Callsign));
-        //    sb.AppendLine();
-        //    sb.AppendLine(string.Format("Your current score is: {0} points!", _cdata.GetFinalScore().ToString("### ### ##0")));
-        //    lbInfo.Text = sb.ToString();
-        //}
 
         private void label1_Click(object sender, EventArgs e)
         {
