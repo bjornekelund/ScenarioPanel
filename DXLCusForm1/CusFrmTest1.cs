@@ -8,7 +8,7 @@ namespace DXLog.net
     {
         public static string CusWinName
         {
-            get { return "Scenario panel"; }
+            get { return "SO2R Scenario"; }
         }
 
         public static int CusFormID
@@ -40,7 +40,7 @@ namespace DXLog.net
         private void handle_FormLayoutChangeEvent()
         {
             InitializeLayout();
-            update_display(mainForm.activeSO2RScenario);
+            update_display(mainForm.activeSO2RScenario + 1);
         }
 
         public override void InitializeLayout()
@@ -57,7 +57,7 @@ namespace DXLog.net
                 if (mainForm != null)
                 {
                     _cdata.ScenarioSelectionChanged += new ContestData.ScenarioSelectionChange(update_display);
-                    update_display(mainForm.activeSO2RScenario);
+                    update_display(mainForm.activeSO2RScenario + 1);
                 }
             }
         }

@@ -150,11 +150,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.FormID = 1000;
+            this.FormID = 1011;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CusFrmTest1";
-            this.Text = "Scenario Panel";
+            this.Text = "SO2R Scenario";
             this.ResumeLayout(false);
 
         }
