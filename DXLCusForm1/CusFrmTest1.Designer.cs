@@ -49,7 +49,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 4);
+            this.label1.Location = new System.Drawing.Point(2, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 18);
             this.label1.TabIndex = 2;
@@ -60,7 +60,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 29);
+            this.label2.Location = new System.Drawing.Point(2, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 18);
             this.label2.TabIndex = 3;
@@ -71,7 +71,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 54);
+            this.label3.Location = new System.Drawing.Point(2, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 18);
             this.label3.TabIndex = 4;
@@ -82,7 +82,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 79);
+            this.label4.Location = new System.Drawing.Point(2, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 18);
             this.label4.TabIndex = 5;
@@ -93,7 +93,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(7, 104);
+            this.label5.Location = new System.Drawing.Point(2, 87);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(130, 18);
             this.label5.TabIndex = 6;
@@ -104,7 +104,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(7, 129);
+            this.label6.Location = new System.Drawing.Point(2, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 18);
             this.label6.TabIndex = 7;
@@ -115,7 +115,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 154);
+            this.label7.Location = new System.Drawing.Point(2, 129);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(130, 18);
             this.label7.TabIndex = 8;
@@ -126,7 +126,7 @@
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(7, 179);
+            this.label8.Location = new System.Drawing.Point(2, 150);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(130, 18);
             this.label8.TabIndex = 9;
@@ -139,7 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
-            this.ClientSize = new System.Drawing.Size(149, 206);
+            this.ClientSize = new System.Drawing.Size(144, 181);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);

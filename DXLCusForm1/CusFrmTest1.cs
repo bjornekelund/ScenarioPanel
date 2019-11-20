@@ -71,14 +71,17 @@ namespace DXLog.net
                 return;
             }
 
-            label1.Text = mainForm.so2rScenarios[0].ScenarioName.Trim();
-            label2.Text = mainForm.so2rScenarios[1].ScenarioName.Trim();
-            label3.Text = mainForm.so2rScenarios[2].ScenarioName.Trim();
-            label4.Text = mainForm.so2rScenarios[3].ScenarioName.Trim();
-            label5.Text = mainForm.so2rScenarios[4].ScenarioName.Trim();
-            label6.Text = mainForm.so2rScenarios[5].ScenarioName.Trim();
-            label7.Text = mainForm.so2rScenarios[6].ScenarioName.Trim();
-            label8.Text = mainForm.so2rScenarios[7].ScenarioName.Trim();
+            if (mainForm.so2rScenarios[0] != null)
+            {
+                label1.Text = mainForm.so2rScenarios[0].ScenarioName.Trim();
+                label2.Text = mainForm.so2rScenarios[1].ScenarioName.Trim();
+                label3.Text = mainForm.so2rScenarios[2].ScenarioName.Trim();
+                label4.Text = mainForm.so2rScenarios[3].ScenarioName.Trim();
+                label5.Text = mainForm.so2rScenarios[4].ScenarioName.Trim();
+                label6.Text = mainForm.so2rScenarios[5].ScenarioName.Trim();
+                label7.Text = mainForm.so2rScenarios[6].ScenarioName.Trim();
+                label8.Text = mainForm.so2rScenarios[7].ScenarioName.Trim();
+            }
 
             label1.BackColor = Color.Turquoise;
             label2.BackColor = Color.Turquoise;
@@ -109,7 +112,7 @@ namespace DXLog.net
 
             if (_cdata.OPTechnique == ContestData.Technique.SO2R_ADV)
             {
-                switch (scenario + 1)
+                switch (scenario)
                 {
                     case 1:
                         label1.BackColor = Color.Red;
