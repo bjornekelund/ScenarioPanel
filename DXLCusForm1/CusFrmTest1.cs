@@ -40,6 +40,7 @@ namespace DXLog.net
         private void handle_FormLayoutChangeEvent()
         {
             InitializeLayout();
+            update_display(mainForm.activeSO2RScenario);
         }
 
         public override void InitializeLayout()
@@ -56,7 +57,7 @@ namespace DXLog.net
                 if (mainForm != null)
                 {
                     _cdata.ScenarioSelectionChanged += new ContestData.ScenarioSelectionChange(update_display);
-                    update_display(mainForm.activeSO2RScenario + 1);
+                    update_display(mainForm.activeSO2RScenario);
                 }
             }
         }
@@ -108,7 +109,7 @@ namespace DXLog.net
 
             if (_cdata.OPTechnique == ContestData.Technique.SO2R_ADV)
             {
-                switch (scenario)
+                switch (scenario + 1)
                 {
                     case 1:
                         label1.BackColor = Color.Red;
