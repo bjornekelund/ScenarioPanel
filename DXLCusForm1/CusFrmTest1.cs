@@ -17,7 +17,7 @@ namespace DXLog.net
         }
 
         private ContestData _cdata = null;
-        private Font _windowFont = new Font("Courier New", 10, FontStyle.Regular);
+        private Font _windowFont = new Font("Courier New", 10, FontStyle.Bold);
 
         private FrmMain mainForm = null;
 
@@ -40,7 +40,6 @@ namespace DXLog.net
         private void handle_FormLayoutChangeEvent()
         {
             InitializeLayout();
-            update_display(mainForm.activeSO2RScenario + 1);
         }
 
         public override void InitializeLayout()
@@ -57,19 +56,20 @@ namespace DXLog.net
                 if (mainForm != null)
                 {
                     _cdata.ScenarioSelectionChanged += new ContestData.ScenarioSelectionChange(update_display);
-                    update_display(mainForm.activeSO2RScenario + 1);
                 }
             }
+            update_display(mainForm.activeSO2RScenario + 1);
         }
 
         private void update_display(int scenario)
         {
-            if (InvokeRequired)
-            {
-                ContestData.ScenarioSelectionChange d = new ContestData.ScenarioSelectionChange(update_display);
-                Invoke(d, new object[] { scenario });
-                return;
-            }
+
+            //if (InvokeRequired)
+            //{
+            //    ContestData.ScenarioSelectionChange d = new ContestData.ScenarioSelectionChange(update_display);
+            //    Invoke(d, new object[] { scenario });
+            //    return;
+            //}
 
             if (mainForm.so2rScenarios[0] != null)
             {
